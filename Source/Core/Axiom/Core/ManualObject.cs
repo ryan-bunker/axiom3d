@@ -364,7 +364,8 @@ namespace Axiom.Core
 
 				foreach ( var elem in elemList )
 				{
-					var idx = elem.Offset;
+					//Position,Normal,TexCoords,Diffuse all byte 4
+					var idx = elem.Offset / 4;
 
 					RenderSystem rs;
 					int dims;
